@@ -1,0 +1,52 @@
+/* 
+----------------------
+        Colors
+----------------------
+*/
+/* 
+----------------------
+        Fonts
+----------------------
+*/
+body {
+  margin: 0px;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #121618;
+  height: 70px;
+}
+
+header ul {
+  display: flex;
+}
+
+li {
+  list-style: none;
+  padding: 0px 20px;
+  color: white;
+  font-family: "Poppins", Arial, sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+p {
+  color: #f7c262;
+  margin: 0;
+  font-size: 10px;
+  letter-spacing: 4px;
+}
+
+.logo {
+  color: white;
+  font-family: "Josefin Sans", Arial, sans-serif;
+  font-size: 26px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+/*# sourceMappingURL=style.css.map */
