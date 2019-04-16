@@ -1,0 +1,61 @@
+#about-page {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    .container1{
+        height: 750px;
+        width: 1500px;
+        background-image: url("https://technext.github.io/pizza/images/bg_3.jpg");
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+    }
+    .container2{
+        height: 150px;
+        width: 1500px;
+        display: flex;
+       
+        .all-text{
+            height: 150px;
+            width: 1100px;
+            background-color: black;
+            display: flex;
+            flex-direction: row;
+            color: white;
+        }
+            .redes-container{
+                height: 150px;
+                width: 200px;
+                background-color: red;
+            
+            }
+        }
+    
+.container3{
+    height: 400px;
+    width: 1500px;
+    display: flex;
+    flex-direction: row;
+    .containter3A{
+        height: 400px;
+        width: 800px;
+        padding: 80px;
+    }
+    
+    .img-sillas{
+        width: 814px;
+    }
+}
+    .container4{
+        height: 670px;
+        width: 1500px;
+        
+
+        .tex-chef-container{
+        height: 1140px;
+        width: 170px;
+        text-align: center;
+        }
+    }
+}
