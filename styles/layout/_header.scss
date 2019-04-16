@@ -1,0 +1,36 @@
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $BackgroundColor;
+    height: 70px;
+}
+
+header ul {
+    display: flex;
+}
+
+li {
+    list-style: none;
+    padding: 0px 20px;
+    color: white;
+    font-family: $SecondaryFont;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+p {
+    color: $YellowColor;
+    margin: 0;
+    font-size: 10px;
+    letter-spacing: 4px;
+}
+
+.logo {
+    color: white;
+    font-family: $MainFont;
+    font-size: 26px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
