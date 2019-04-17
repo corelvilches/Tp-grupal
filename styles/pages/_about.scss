@@ -1,36 +1,118 @@
 #about-page {
+    background-image: url($BackgroundImg2);
+    background-attachment: fixed;
     display: flex;
     justify-content: center;
     flex-direction: column;
     .container1{
-        height: 750px;
-        width: 1500px;
-        background-image: url("https://technext.github.io/pizza/images/bg_3.jpg");
+        height: 800px;
+        width: 100%;
+        background-image: url($BackgroundImg1);
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
         align-content: center;
+        position: relative;
+        .mascara{
+            position: absolute;
+            height: 100%;
+            background-color: $BlackColor;
+            opacity: 0.5;
+            width: 100%;
+        }
+        h1{
+            font-family: $MainFont;
+            color: $WhiteColor;
+            font-size: 30px;
+            position: relative;
+            
+        }
+        span{
+            font-family: $SecondaryFont;
+            color: $WhiteColor;  
+            position: relative;
+        }
     }
     .container2{
-        height: 150px;
-        width: 1500px;
+        height: 120px;
+        width: 100%;
         display: flex;
        
         .all-text{
-            height: 150px;
+            height: 120px;
             width: 1100px;
-            background-color: black;
+            background-color: $BlackColor;
             display: flex;
             flex-direction: row;
-            color: white;
-        }
-            .redes-container{
-                height: 150px;
-                width: 200px;
-                background-color: red;
-            
+            justify-content: space-around;
+            align-content: center;
+            align-items: center;
+            position: relative;
+            h3{
+                font-family: $MainFont;
+                color: $WhiteColor;
+                font-size: 13px;
+            }
+            p{
+                font-family: $SecondaryFont;
+                color: $GrayColor;
+            }
+            .text-box1{
+                height: 83px;
+                width: 232px; 
+                margin-left: 50px;
+                .phone{
+                    width: 20px;
+                    height: 20px;
+                    position: absolute;
+                    margin-left: -30px;
+                    margin-top: 8px;
+                }
+            }
+            .text-box2{
+                height: 83px;
+                width: 232px;
+                .gps{
+                    width: 20px;
+                    height: 20px;
+                    position: absolute;
+                    margin-left: -30px;
+                    margin-top: 8px;
+                }
+            }
+            .text-box3{
+                height: 83px;
+                width: 232px;
+                .clock{
+                    width: 20px;
+                    height: 20px;
+                    position: absolute;
+                    margin-left: -30px;
+                    margin-top: 8px;
+                }
             }
         }
+            .redes-container{
+                height: 120px;
+                width: 600px;
+                background-color:$YellowColor;
+                color: $WhiteColor;
+                display: flex;
+                align-items: center;
+                align-content: center;
+                .twitter{
+                    margin-left: 30px;
+                    padding: 15px;
+                }
+                .facebook{
+                    padding: 15px;
+                }
+                .instagram{
+                    padding: 15px;
+                }
+            } 
+    }
     
 .container3{
     height: 400px;
@@ -41,21 +123,185 @@
         height: 400px;
         width: 800px;
         padding: 80px;
+        h2{
+            font-family: $MainFont;
+            color: $WhiteColor;
+        }
+        p{
+            font-family: $SecondaryFont;
+            color: $GrayColor;
+        }
     }
-    
     .img-sillas{
         width: 814px;
+        margin: 0 auto;
     }
 }
     .container4{
-        height: 670px;
-        width: 1500px;
-        
-
-        .tex-chef-container{
-        height: 1140px;
-        width: 170px;
-        text-align: center;
+            height: 670px;
+            width: 1500px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            align-content: center;
+        .text-chef-container{
+            height: 1140px;
+            width: 400px;
+            text-align: center;
+            margin-top: 40px;
+            h2{
+                font-family: $MainFont;
+                color: $WhiteColor;
+            }
+            p{
+                font-family: $SecondaryFont;
+                color: $GrayColor;
+                text-align: none;
+            }
+                
+        }
+        .all-chef-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-bottom: 50px;
+            
+            h3{
+                font-family: $MainFont;
+                color: $YellowColor;
+                font-size:15px;
+                font-weight: 400;   
+            }
+            h6{
+                font-family: $SecondaryFont;
+                color: $WhiteColor;
+                font-weight: 400; 
+            }
+            p{
+                font-family: $SecondaryFont;
+                color: $GrayColor;
+            }
+            .chef1{
+                &:hover {
+                border: 1px solid $YellowColor;
+                }
+                text-align: center;
+                height: 330px;
+                width: 200px;
+                border: 1px solid #5B3F17;
+                margin: 20px;
+                padding: 15px;
+                img{
+                    height: 140px;
+                    width: 140px;
+                    border-radius: 100px;
+                }
+            }
+            .chef2{
+                &:hover {
+                    border: 1px solid $YellowColor;
+                    }
+                text-align: center;
+                height: 330px;
+                width: 200px;
+                border: 1px solid #5B3F17;
+                margin: 20px;
+                padding: 15px;
+                img{
+                    height: 140px;
+                    width: 140px;
+                    border-radius: 100px;
+                }
+            }
+            .chef3{
+                &:hover {
+                    border: 1px solid $YellowColor;
+                    }
+                text-align: center;
+                height: 330px;
+                width: 200px;
+                border: 1px solid #5B3F17;
+                margin: 20px;
+                padding: 15px;
+                img{
+                    height: 140px;
+                    width: 140px;
+                    border-radius: 100px;
+                }
+            }
+            .chef4{
+                &:hover {
+                    border: 1px solid $YellowColor;
+                    }
+                text-align: center;
+                height: 330px;
+                width: 200px;
+                border: 1px solid #5B3F17;
+                margin: 20px;
+                padding: 15px;
+                img{
+                    height: 140px;
+                    width: 140px;
+                    border-radius: 100px;
+                }
+            }
         }
     }
+    .container5{
+        .people-img{
+            background-image: url(https://technext.github.io/pizza/images/bg_2.jpg);
+            background-attachment: fixed;
+            width: 100%;
+            height: 387px;
+            opacity: 0.5;
+        }
+    }
+    .container6{
+        height: 300px;
+        width: 100%;
+        display: flex;
+        .mapa{
+            height: 400px;
+            width: 600px;
+        }
+    .container-form{
+        display: block;
+        width: 950px;
+        height: 400px; 
+        padding: 10px, 20px;
+        font-family: $SecondaryFont;
+        background-color: $BlackColor;
+        
+        h3{
+            font-family: $MainFont;
+            color: $WhiteColor;
+            margin-left: 80px;
+            margin-top: 80px;
+        }
+        input{
+            border: 0;
+            border-bottom: 0.5px solid $WhiteColor;
+            appearance: none;
+            outline:0;
+            display: block;
+            margin-left: 80px;
+            margin-bottom: 50px;
+            width: 500px;
+            padding: 10px, 20px;
+            font-family: $SecondaryFont;
+            background-color:$BlackColor;
+        }
+        textarea{
+            border: 0;
+            border-bottom: 0.5px solid $WhiteColor;
+            display: block;
+            margin-left: 80px;
+            width: 500px;
+            padding: 10px, 20px;
+            font-family: $SecondaryFont;
+            background-color: $BlackColor;
+        }
+    }
+}
 }
