@@ -1,3 +1,223 @@
 body {
     margin: 0px;
+    background-image: url("https://technext.github.io/pizza/images/bg_4.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+p {
+    color: $main-color;
+    font-family: $secondary-font;
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: .2px;
+}
+
+/*
+-----------------------
+        BANNER
+-----------------------
+*/
+
+#banner {
+    background-image: url("https://technext.github.io/pizza/images/bg_3.jpg");
+    background-size: cover;
+    background-position-y: -70px;
+    height: 750px;
+    color: white;
+    position: relative;
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 750px;
+
+    & ul {
+        display: flex;
+        padding: 0px;
+        z-index: 999;
+
+        li {
+            padding: 0px 6px;
+
+            & :nth-of-type(1) {
+                color: white;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    h1 {
+        font-family: $main-font;
+        font-size: 40px;
+        font-weight: 400;
+        margin-bottom: 10px;
+        z-index: 999;
+    }
+}
+
+.background-over {
+    position: absolute;
+    background: #000000;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: .5;
+}
+
+/*
+-----------------------
+       DESCRIPTION
+-----------------------
+*/
+
+#description {
+    display: flex;
+    justify-content: center;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    width: 600px;
+
+    h1 {
+        font-family: $main-font;
+        font-size: 30px;
+        font-weight: 400;
+        color: white;
+    }
+
+    p {
+        text-align: center;
+    }
+}
+
+/*
+-----------------------
+       DESCRIPTION
+-----------------------
+*/
+
+#menu-img-desc {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.img-menu-1, .img-menu-2, .img-menu-3,
+.img-menu-4, .img-menu-5, .img-menu-6, .desc-menu {
+    height: 265px;
+    width: 16.6%;
+}
+
+.img-menu-1, .img-menu-2, .img-menu-3,
+.img-menu-4, .img-menu-5, .img-menu-6 {
+    background-size: cover;
+    background-position-x: -10px;
+}
+
+.img-menu-1 {
+    background-image: url("https://www.pizzahut-tt.com/wp-content/uploads/2017/05/Chicken-BBQ-1-copy.jpg");
+}
+
+.img-menu-2 {
+    background-image: url("https://www.pizzahut-tt.com/wp-content/uploads/2017/05/Hawaiian-Luau-1-copy.jpg");
+}
+
+.img-menu-3 {
+    background-image: url("https://www.pizzahut-tt.com/wp-content/uploads/2017/05/VEGGIE-LOVER%E2%80%99S-new.png");
+}
+
+.img-menu-4 {
+    background-image: url("https://www.pizzahut-tt.com/wp-content/uploads/2017/05/SUPREME-LOVER%E2%80%99S-1new-copy.jpg");
+}
+
+.img-menu-5 {
+    background-image: url("https://www.pizzahut-tt.com/wp-content/uploads/2017/05/Texas-BBQ-1-copy.jpg");
+}
+
+.img-menu-6 {
+    background-image: url("http://dev.pizzahut-tt.com/wp-content/uploads/2017/05/Tropical-Chicken-1-copy.jpg");
+}
+
+.desc-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 20px;
+    box-sizing: border-box;
+
+    h3 {
+        color: white;
+        font-family: $main-font;
+        margin: 5px 0px;
+    }
+
+    p {
+        line-height: 1.8;
+        margin: 0px 0px 10px 0px;
+    }
+
+    h4 {
+        color: $secondary-color;
+        font-family: $secondary-font;
+        font-weight: 300;
+        margin: 0px 20px 0px 0px;
+    }
+
+    div {
+        display: flex;
+        align-items: center;
+        height: 50px;
+    }
+
+}
+
+/*
+-----------------------
+       PRICING
+-----------------------
+*/
+
+#pricing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 300px;
+}
+
+.pricing {
+    width: 600px;
+    h1 {
+        font-family: $main-font;
+        font-size: 30px;
+        font-weight: 400;
+        color: white;
+        margin: 40px 0px;
+    }
+
+    hr {
+        width: 20%;
+        border-color: transparent transparent $secondary-color transparent;
+    }
+
+    p {
+        margin: 40px 0px;
+    }
 }
